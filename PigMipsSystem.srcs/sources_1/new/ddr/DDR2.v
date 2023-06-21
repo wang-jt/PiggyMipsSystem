@@ -198,7 +198,11 @@ module DDR2(
     reg [15:0] wait_count;
     // change state 
     always @(posedge wb_clk_i) begin
-       if(wb_cyc_i&wb_stb_i)begin
+       if(wb_rst_i)begin
+           state<=IDLE;
+           wb_ack_o<=1'b0;
+       end 
+       else if(wb_cyc_i&wb_stb_i)begin
            state<=next_state;
            if(state==ENDING&&!wb_ack_o)begin
                wb_ack_o<=1'b1;

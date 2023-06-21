@@ -2,15 +2,16 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Jun  3 17:37:37 2023
-# Process ID: 27836
-# Current directory: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1
+# Start of session at: Sun Jun  4 23:35:25 2023
+# Process ID: 17572
+# Current directory: D:/Repos/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1
 # Command line: vivado.exe -log mig_7series_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mig_7series_0.tcl
-# Log file: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1/mig_7series_0.vds
-# Journal file: D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1\vivado.jou
+# Log file: D:/Repos/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1/mig_7series_0.vds
+# Journal file: D:/Repos/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1\vivado.jou
 # Running On: LAPTOP-JNSJ8DCA, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 16539 MB
 #-----------------------------------------------------------
 source mig_7series_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1284.742 ; gain = 0.000
 Command: synth_design -top mig_7series_0 -part xc7a100tcsg324-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -18,20 +19,20 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 34572
-WARNING: [Synth 8-9187] begin/end is required for generate-for in this mode of verilog [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:253]
+INFO: [Synth 8-7075] Helper process launched with PID 1960
+WARNING: [Synth 8-9187] begin/end is required for generate-for in this mode of verilog [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:253]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1286.488 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1284.742 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v:71]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_0_mig' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:74]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_tempmon' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0_mig' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:74]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_tempmon' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v:69]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter TEMP_MON_CONTROL bound to: EXTERNAL - type: string 
 	Parameter XADC_CLK_PERIOD bound to: 5000 - type: integer 
 	Parameter tTEMPSAMPLE bound to: 10000000 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_tempmon' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v:69]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_iodelay_ctrl' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_tempmon' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_iodelay_ctrl' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v:80]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter IODELAY_GRP0 bound to: MIG_7SERIES_0_IODELAY_MIG0 - type: string 
 	Parameter REFCLK_TYPE bound to: USE_SYSTEM_CLOCK - type: string 
@@ -41,12 +42,12 @@ INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_iodelay_ctrl' [d:/Dow
 	Parameter DIFF_TERM_REFCLK bound to: TRUE - type: string 
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57299]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_iodelay_ctrl' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v:80]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_clk_ibuf' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_iodelay_ctrl' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v:80]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_clk_ibuf' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v:68]
 	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
 	Parameter DIFF_TERM_SYSCLK bound to: TRUE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_clk_ibuf' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v:68]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_infrastructure' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_clk_ibuf' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v:68]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_infrastructure' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:78]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter CLKIN_PERIOD bound to: 4999 - type: integer 
 	Parameter nCK_PER_CLK bound to: 4 - type: integer 
@@ -116,8 +117,8 @@ INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [D:/Programs/Xilinx/Vivado/
 INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89396]
 INFO: [Synth 8-6157] synthesizing module 'BUFH' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1318]
 INFO: [Synth 8-6155] done synthesizing module 'BUFH' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1318]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_infrastructure' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:78]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_memc_ui_top_std' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_infrastructure' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:78]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_memc_ui_top_std' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:71]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter PAYLOAD_WIDTH bound to: 16 - type: integer 
 	Parameter ADDR_CMD_MODE bound to: 1T - type: string 
@@ -250,68 +251,68 @@ INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_memc_ui_top_std' [d:/
 	Parameter SKIP_CALIB bound to: FALSE - type: string 
 	Parameter TAPSPERKCLK bound to: 56 - type: integer 
 	Parameter FPGA_VOLT_TYPE bound to: N - type: string 
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_mem_intfc' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_mc' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:73]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_mach' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v:71]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_cntrl' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_mem_intfc' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_mc' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_mach' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_cntrl' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:79]
 INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106148]
 INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:106148]
-WARNING: [Synth 8-567] referenced signal 'periodic_rd_generation.periodic_rd_timer_one' should be on the sensitivity list [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:509]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_cntrl' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:79]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_common' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:72]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_common' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:72]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_mach' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v:71]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_mach' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v:72]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_compare' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_compare' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:74]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized2' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized2' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized2' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized2' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized2' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized2' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_common' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v:73]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_common' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v:73]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_mux' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v:69]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_row_col' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:83]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_row_col' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:83]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_select' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_select' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_mux' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_mach' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v:72]
-WARNING: [Synth 8-7071] port 'idle' of module 'mig_7series_v4_2_bank_mach' is unconnected for instance 'bank_mach0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:670]
-WARNING: [Synth 8-7023] instance 'bank_mach0' of module 'mig_7series_v4_2_bank_mach' has 74 connections declared, but only 73 given [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:670]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_col_mach' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:88]
+WARNING: [Synth 8-567] referenced signal 'periodic_rd_generation.periodic_rd_timer_one' should be on the sensitivity list [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:509]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_cntrl' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_rank_common' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:72]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_common' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_rank_mach' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_mach' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v:72]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_compare' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_compare' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:74]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized2' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_state__parameterized2' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_state__parameterized2' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v:141]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_queue__parameterized2' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_queue__parameterized2' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v:174]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_cntrl__parameterized2' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_bank_common' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_common' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_mux' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_row_col' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:83]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_round_robin_arb__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:121]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_row_col' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:83]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_arb_select' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_select' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_arb_mux' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_bank_mach' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v:72]
+WARNING: [Synth 8-7071] port 'idle' of module 'mig_7series_v4_2_bank_mach' is unconnected for instance 'bank_mach0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:670]
+WARNING: [Synth 8-7023] instance 'bank_mach0' of module 'mig_7series_v4_2_bank_mach' has 74 connections declared, but only 73 given [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:670]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_col_mach' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:88]
 INFO: [Synth 8-6157] synthesizing module 'RAM32M' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:98065]
 INFO: [Synth 8-6155] done synthesizing module 'RAM32M' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:98065]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_col_mach' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:88]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_mc' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:73]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_top' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_mc_phy_wrapper' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_col_mach' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_mc' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_top' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_mc_phy_wrapper' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:71]
 INFO: [Synth 8-6157] synthesizing module 'OBUF' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71220]
 INFO: [Synth 8-6155] done synthesizing module 'OBUF' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71220]
 INFO: [Synth 8-6157] synthesizing module 'OBUFT' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71571]
@@ -320,25 +321,25 @@ INFO: [Synth 8-6157] synthesizing module 'IOBUF_INTERMDISABLE' [D:/Programs/Xili
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF_INTERMDISABLE' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:60376]
 INFO: [Synth 8-6157] synthesizing module 'IOBUFDS_INTERMDISABLE' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59952]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUFDS_INTERMDISABLE' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59952]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
-WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1428]
-WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_0' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1428]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
-WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1445]
-WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_1' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1445]
-WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_2' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1462]
-WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_2' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1462]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1428]
+WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_0' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1428]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1445]
+WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_1' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1445]
+WARNING: [Synth 8-7071] port 'afull' of module 'mig_7series_v4_2_ddr_of_pre_fifo' is unconnected for instance 'phy_ctl_pre_fifo_2' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1462]
+WARNING: [Synth 8-7023] instance 'phy_ctl_pre_fifo_2' of module 'mig_7series_v4_2_ddr_of_pre_fifo' has 8 connections declared, but only 7 given [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1462]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_mc_phy' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_4lanes' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:72]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_if_post_fifo' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:68]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:110]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_if_post_fifo' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:68]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_mc_phy' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_4lanes' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_if_post_fifo' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_if_post_fifo' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v:68]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_of_pre_fifo__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v:76]
 INFO: [Synth 8-6157] synthesizing module 'PHASER_IN_PHY' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89082]
 INFO: [Synth 8-6155] done synthesizing module 'PHASER_IN_PHY' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89082]
 INFO: [Synth 8-6157] synthesizing module 'IN_FIFO' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:59666]
@@ -347,7 +348,7 @@ INFO: [Synth 8-6157] synthesizing module 'PHASER_OUT_PHY' [D:/Programs/Xilinx/Vi
 INFO: [Synth 8-6155] done synthesizing module 'PHASER_OUT_PHY' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89219]
 INFO: [Synth 8-6157] synthesizing module 'OUT_FIFO' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75470]
 INFO: [Synth 8-6155] done synthesizing module 'OUT_FIFO' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75470]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
 INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:57312]
 INFO: [Synth 8-6157] synthesizing module 'ISERDESE2' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:62114]
@@ -358,239 +359,239 @@ INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [D:/Program
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75355]
 INFO: [Synth 8-6157] synthesizing module 'ODDR' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
 INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:74748]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
 INFO: [Synth 8-6157] synthesizing module 'PHASER_OUT_PHY__parameterized0' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89219]
 INFO: [Synth 8-6155] done synthesizing module 'PHASER_OUT_PHY__parameterized0' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89219]
 INFO: [Synth 8-6157] synthesizing module 'OUT_FIFO__parameterized0' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75470]
 INFO: [Synth 8-6155] done synthesizing module 'OUT_FIFO__parameterized0' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75470]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized0' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized0' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
 INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized1' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75355]
 INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized1' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:75355]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized1' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized1' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized2' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized1' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized1' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized2' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
 INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71234]
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:71234]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized2' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized2' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized2' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized2' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_group_io__parameterized2' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_byte_lane__parameterized2' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:70]
 INFO: [Synth 8-6157] synthesizing module 'BUFIO' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
 INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:1343]
 INFO: [Synth 8-6157] synthesizing module 'PHY_CONTROL' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89310]
 INFO: [Synth 8-6155] done synthesizing module 'PHY_CONTROL' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89310]
-INFO: [Synth 8-226] default block is never used [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:1557]
+INFO: [Synth 8-226] default block is never used [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:1557]
 INFO: [Synth 8-6157] synthesizing module 'PHASER_REF' [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89294]
 INFO: [Synth 8-6155] done synthesizing module 'PHASER_REF' (0#1) [D:/Programs/Xilinx/Vivado/2022.1/scripts/rt/data/unisim_comp.v:89294]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_4lanes' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:72]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_mc_phy' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v:70]
-WARNING: [Synth 8-689] width (12) of port connection 'pi_dqs_found_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_mc_phy' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
-WARNING: [Synth 8-689] width (12) of port connection 'pi_phase_locked_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_mc_phy' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
-WARNING: [Synth 8-7071] port 'of_data_a_full' of module 'mig_7series_v4_2_ddr_mc_phy' is unconnected for instance 'u_ddr_mc_phy' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1579]
-WARNING: [Synth 8-7023] instance 'u_ddr_mc_phy' of module 'mig_7series_v4_2_ddr_mc_phy' has 89 connections declared, but only 88 given [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1579]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_mc_phy_wrapper' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:71]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_calib_top' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:82]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_wrlvl_off_delay' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_wrlvl_off_delay' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v:68]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:79]
-WARNING: [Synth 8-689] width (2) of port connection 'fine_adjust_lane_cnt' does not match port width (1) of module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1963]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_rdlvl' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_4lanes' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_mc_phy' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v:70]
+WARNING: [Synth 8-689] width (12) of port connection 'pi_dqs_found_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_mc_phy' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1671]
+WARNING: [Synth 8-689] width (12) of port connection 'pi_phase_locked_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_mc_phy' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1679]
+WARNING: [Synth 8-7071] port 'of_data_a_full' of module 'mig_7series_v4_2_ddr_mc_phy' is unconnected for instance 'u_ddr_mc_phy' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1579]
+WARNING: [Synth 8-7023] instance 'u_ddr_mc_phy' of module 'mig_7series_v4_2_ddr_mc_phy' has 89 connections declared, but only 88 given [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:1579]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_mc_phy_wrapper' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_calib_top' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:82]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_wrlvl_off_delay' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_wrlvl_off_delay' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v:68]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:79]
+WARNING: [Synth 8-689] width (2) of port connection 'fine_adjust_lane_cnt' does not match port width (1) of module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1963]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_rdlvl' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:79]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2746]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_rdlvl' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:79]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_prbs_gen' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:92]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'rd_addr' is not inferred as ram due to incorrect usage [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:203]
-WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'mem_out' is not inferred as ram due to incorrect usage [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:205]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_prbs_gen' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:92]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_init' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:89]
-INFO: [Synth 8-226] default block is never used [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:5303]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_init' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:89]
-WARNING: [Synth 8-7071] port 'complex_oclk_prech_req' of module 'mig_7series_v4_2_ddr_phy_init' is unconnected for instance 'u_ddr_phy_init' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1367]
-WARNING: [Synth 8-7023] instance 'u_ddr_phy_init' of module 'mig_7series_v4_2_ddr_phy_init' has 131 connections declared, but only 130 given [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1367]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_wrcal' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:77]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1130]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_wrcal' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:77]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_tempmon' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_tempmon' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_calib_top' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:82]
-WARNING: [Synth 8-689] width (12) of port connection 'pi_dqs_found_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_calib_top' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1340]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_top' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_mem_intfc' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_top' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v:71]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_cmd' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v:70]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_cmd' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v:70]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_wr_data' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:131]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:342]
-INFO: [Synth 8-155] case statement is not full and has no default [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:380]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_wr_data' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:131]
-INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_rd_data' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:140]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_rd_data' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:140]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_top' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v:71]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_memc_ui_top_std' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:71]
-WARNING: [Synth 8-689] width (1) of port connection 'dbg_poc' does not match port width (1024) of module 'mig_7series_v4_2_memc_ui_top_std' [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:1082]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0_mig' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:74]
-INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v:71]
-WARNING: [Synth 8-3848] Net ui_addn_clk_0 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:140]
-WARNING: [Synth 8-3848] Net ui_addn_clk_1 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:141]
-WARNING: [Synth 8-3848] Net ui_addn_clk_2 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:142]
-WARNING: [Synth 8-3848] Net ui_addn_clk_3 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:143]
-WARNING: [Synth 8-3848] Net ui_addn_clk_4 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:144]
-WARNING: [Synth 8-6014] Unused sequential element periodic_rd_generation.read_this_rank_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:487]
-WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_req_reg' and it is trimmed from '6' to '5' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:145]
-WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_last_master_ns_reg' and it is trimmed from '6' to '4' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:143]
-WARNING: [Synth 8-6014] Unused sequential element last_master_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:181]
-WARNING: [Synth 8-3848] Net channel[0].inh_group in module/entity mig_7series_v4_2_round_robin_arb__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:153]
-WARNING: [Synth 8-3936] Found unconnected internal register 'col_addr_template_reg' and it is trimmed from '16' to '13' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:251]
-WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_req_reg' and it is trimmed from '8' to '7' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:145]
-WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_last_master_ns_reg' and it is trimmed from '8' to '6' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:143]
-WARNING: [Synth 8-6014] Unused sequential element sent_row_or_maint_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:357]
-WARNING: [Synth 8-6014] Unused sequential element mc_aux_out_r_1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:680]
-WARNING: [Synth 8-6014] Unused sequential element mc_aux_out_r_2_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:681]
-WARNING: [Synth 8-3848] Net col_mux.col_row_r in module/entity mig_7series_v4_2_arb_select does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:390]
-WARNING: [Synth 8-3936] Found unconnected internal register 'read_fifo.fifo_out_data_r_reg' and it is trimmed from '12' to '8' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:396]
-WARNING: [Synth 8-6014] Unused sequential element fine_delay_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:185]
-WARNING: [Synth 8-3848] Net dummy_i5 in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:269]
-WARNING: [Synth 8-3848] Net dummy_i6 in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:270]
-WARNING: [Synth 8-3848] Net oserdes_dqts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:143]
-WARNING: [Synth 8-3848] Net oserdes_dqs_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:144]
-WARNING: [Synth 8-3848] Net oserdes_dqsts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:145]
-WARNING: [Synth 8-3848] Net iserdes_dout in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:92]
-WARNING: [Synth 8-6014] Unused sequential element ififo_rst_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:307]
-WARNING: [Synth 8-3848] Net rclk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:147]
-WARNING: [Synth 8-3848] Net pi_iserdes_rst in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:193]
-WARNING: [Synth 8-3848] Net pi_fine_overflow in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:195]
-WARNING: [Synth 8-3848] Net pi_counter_read_val_w in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:431]
-WARNING: [Synth 8-3848] Net dqs_out_of_range in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:198]
-WARNING: [Synth 8-3848] Net iserdes_clk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:275]
-WARNING: [Synth 8-3848] Net iserdes_clkdiv in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:276]
-WARNING: [Synth 8-6014] Unused sequential element fine_delay_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:185]
-WARNING: [Synth 8-3848] Net dummy_i5 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized1 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:269]
-WARNING: [Synth 8-3848] Net dummy_i6 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized1 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:270]
-WARNING: [Synth 8-3848] Net oserdes_dqts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:143]
-WARNING: [Synth 8-3848] Net oserdes_dqs_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:144]
-WARNING: [Synth 8-3848] Net oserdes_dqsts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:145]
-WARNING: [Synth 8-3848] Net iserdes_dout in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:92]
-WARNING: [Synth 8-6014] Unused sequential element ififo_rst_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:307]
-WARNING: [Synth 8-3848] Net rclk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:147]
-WARNING: [Synth 8-3848] Net pi_iserdes_rst in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:193]
-WARNING: [Synth 8-3848] Net pi_fine_overflow in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:195]
-WARNING: [Synth 8-3848] Net pi_counter_read_val_w in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:431]
-WARNING: [Synth 8-3848] Net dqs_out_of_range in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:198]
-WARNING: [Synth 8-3848] Net iserdes_clk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:275]
-WARNING: [Synth 8-3848] Net iserdes_clkdiv in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:276]
-WARNING: [Synth 8-6014] Unused sequential element B_rst_primitives_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:737]
-WARNING: [Synth 8-6014] Unused sequential element C_rst_primitives_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:738]
-WARNING: [Synth 8-6014] Unused sequential element D_rst_primitives_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:739]
-WARNING: [Synth 8-3936] Found unconnected internal register 'byte_sel_data_map_reg' and it is trimmed from '96' to '88' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:731]
-WARNING: [Synth 8-3848] Net phy_data_full in module/entity mig_7series_v4_2_ddr_mc_phy_wrapper does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:227]
-WARNING: [Synth 8-6014] Unused sequential element rank_final_loop[0].final_do_max_reg[0] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:1116]
-WARNING: [Synth 8-6014] Unused sequential element rank_final_loop[0].final_do_index_reg[0] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:1146]
-WARNING: [Synth 8-6014] Unused sequential element dqsfound_retry_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:690]
-WARNING: [Synth 8-3848] Net dqsfound_retry_done in module/entity mig_7series_v4_2_ddr_phy_dqs_found_cal_hr does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2746]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_rdlvl' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:79]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_prbs_gen' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:92]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'rd_addr' is not inferred as ram due to incorrect usage [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:203]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "distributed" is ignored, object 'mem_out' is not inferred as ram due to incorrect usage [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:205]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_prbs_gen' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:92]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_init' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:89]
+INFO: [Synth 8-226] default block is never used [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:5303]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_init' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:89]
+WARNING: [Synth 8-7071] port 'complex_oclk_prech_req' of module 'mig_7series_v4_2_ddr_phy_init' is unconnected for instance 'u_ddr_phy_init' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1367]
+WARNING: [Synth 8-7023] instance 'u_ddr_phy_init' of module 'mig_7series_v4_2_ddr_phy_init' has 131 connections declared, but only 130 given [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:1367]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_wrcal' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1130]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_wrcal' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:77]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ddr_phy_tempmon' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_tempmon' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_calib_top' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:82]
+WARNING: [Synth 8-689] width (12) of port connection 'pi_dqs_found_lanes' does not match port width (4) of module 'mig_7series_v4_2_ddr_calib_top' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:1340]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ddr_phy_top' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_mem_intfc' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_top' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_cmd' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_cmd' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v:70]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_wr_data' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:342]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:380]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_wr_data' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:131]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_v4_2_ui_rd_data' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_rd_data' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_ui_top' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_v4_2_memc_ui_top_std' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:71]
+WARNING: [Synth 8-689] width (1) of port connection 'dbg_poc' does not match port width (1024) of module 'mig_7series_v4_2_memc_ui_top_std' [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:1082]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0_mig' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:74]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (0#1) [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0.v:71]
+WARNING: [Synth 8-3848] Net ui_addn_clk_0 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:140]
+WARNING: [Synth 8-3848] Net ui_addn_clk_1 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:141]
+WARNING: [Synth 8-3848] Net ui_addn_clk_2 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:142]
+WARNING: [Synth 8-3848] Net ui_addn_clk_3 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:143]
+WARNING: [Synth 8-3848] Net ui_addn_clk_4 in module/entity mig_7series_v4_2_infrastructure does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v:144]
+WARNING: [Synth 8-6014] Unused sequential element periodic_rd_generation.read_this_rank_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v:487]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_req_reg' and it is trimmed from '6' to '5' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:145]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_last_master_ns_reg' and it is trimmed from '6' to '4' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:143]
+WARNING: [Synth 8-6014] Unused sequential element last_master_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:181]
+WARNING: [Synth 8-3848] Net channel[0].inh_group in module/entity mig_7series_v4_2_round_robin_arb__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:153]
+WARNING: [Synth 8-3936] Found unconnected internal register 'col_addr_template_reg' and it is trimmed from '16' to '13' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v:251]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_req_reg' and it is trimmed from '8' to '7' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:145]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dbl_last_master_ns_reg' and it is trimmed from '8' to '6' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v:143]
+WARNING: [Synth 8-6014] Unused sequential element sent_row_or_maint_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v:357]
+WARNING: [Synth 8-6014] Unused sequential element mc_aux_out_r_1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:680]
+WARNING: [Synth 8-6014] Unused sequential element mc_aux_out_r_2_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:681]
+WARNING: [Synth 8-3848] Net col_mux.col_row_r in module/entity mig_7series_v4_2_arb_select does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v:390]
+WARNING: [Synth 8-3936] Found unconnected internal register 'read_fifo.fifo_out_data_r_reg' and it is trimmed from '12' to '8' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v:396]
+WARNING: [Synth 8-6014] Unused sequential element fine_delay_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:185]
+WARNING: [Synth 8-3848] Net dummy_i5 in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:269]
+WARNING: [Synth 8-3848] Net dummy_i6 in module/entity mig_7series_v4_2_ddr_byte_lane does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:270]
+WARNING: [Synth 8-3848] Net oserdes_dqts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:143]
+WARNING: [Synth 8-3848] Net oserdes_dqs_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:144]
+WARNING: [Synth 8-3848] Net oserdes_dqsts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:145]
+WARNING: [Synth 8-3848] Net iserdes_dout in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:92]
+WARNING: [Synth 8-6014] Unused sequential element ififo_rst_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:307]
+WARNING: [Synth 8-3848] Net rclk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:147]
+WARNING: [Synth 8-3848] Net pi_iserdes_rst in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:193]
+WARNING: [Synth 8-3848] Net pi_fine_overflow in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:195]
+WARNING: [Synth 8-3848] Net pi_counter_read_val_w in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:431]
+WARNING: [Synth 8-3848] Net dqs_out_of_range in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:198]
+WARNING: [Synth 8-3848] Net iserdes_clk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:275]
+WARNING: [Synth 8-3848] Net iserdes_clkdiv in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized0 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:276]
+WARNING: [Synth 8-6014] Unused sequential element fine_delay_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:185]
+WARNING: [Synth 8-3848] Net dummy_i5 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized1 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:269]
+WARNING: [Synth 8-3848] Net dummy_i6 in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized1 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:270]
+WARNING: [Synth 8-3848] Net oserdes_dqts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:143]
+WARNING: [Synth 8-3848] Net oserdes_dqs_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:144]
+WARNING: [Synth 8-3848] Net oserdes_dqsts_buf in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:145]
+WARNING: [Synth 8-3848] Net iserdes_dout in module/entity mig_7series_v4_2_ddr_byte_group_io__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v:92]
+WARNING: [Synth 8-6014] Unused sequential element ififo_rst_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:307]
+WARNING: [Synth 8-3848] Net rclk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:147]
+WARNING: [Synth 8-3848] Net pi_iserdes_rst in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:193]
+WARNING: [Synth 8-3848] Net pi_fine_overflow in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:195]
+WARNING: [Synth 8-3848] Net pi_counter_read_val_w in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:431]
+WARNING: [Synth 8-3848] Net dqs_out_of_range in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:198]
+WARNING: [Synth 8-3848] Net iserdes_clk in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:275]
+WARNING: [Synth 8-3848] Net iserdes_clkdiv in module/entity mig_7series_v4_2_ddr_byte_lane__parameterized2 does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v:276]
+WARNING: [Synth 8-6014] Unused sequential element B_rst_primitives_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:737]
+WARNING: [Synth 8-6014] Unused sequential element C_rst_primitives_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:738]
+WARNING: [Synth 8-6014] Unused sequential element D_rst_primitives_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v:739]
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte_sel_data_map_reg' and it is trimmed from '96' to '88' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:731]
+WARNING: [Synth 8-3848] Net phy_data_full in module/entity mig_7series_v4_2_ddr_mc_phy_wrapper does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:227]
+WARNING: [Synth 8-6014] Unused sequential element rank_final_loop[0].final_do_max_reg[0] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:1116]
+WARNING: [Synth 8-6014] Unused sequential element rank_final_loop[0].final_do_index_reg[0] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:1146]
+WARNING: [Synth 8-6014] Unused sequential element dqsfound_retry_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:690]
+WARNING: [Synth 8-3848] Net dqsfound_retry_done in module/entity mig_7series_v4_2_ddr_phy_dqs_found_cal_hr does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v:131]
 WARNING: [Synth 8-5856] 3D RAM dlyval_dq_reg_r_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  dlyval_dq_reg_r_reg 
 WARNING: [Synth 8-5856] 3D RAM idelay_tap_cnt_r_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  idelay_tap_cnt_r_reg 
 WARNING: [Synth 8-5856] 3D RAM rdlvl_dqs_tap_cnt_r_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
 WARNING: [Synth 8-10225] Potential Runtime issue for 3D-RAM or RAM from Record/Structs for RAM  rdlvl_dqs_tap_cnt_r_reg 
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[0].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[1].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[2].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[3].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[4].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[5].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[6].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[7].pb_found_first_edge_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:686]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r2_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:687]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r3_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:688]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:689]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r2_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:690]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r3_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:691]
-WARNING: [Synth 8-6014] Unused sequential element fine_dly_dec_done_r3_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:940]
-WARNING: [Synth 8-6014] Unused sequential element fine_dly_dec_done_r4_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:941]
-WARNING: [Synth 8-6014] Unused sequential element regl_rank_done_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:1044]
-WARNING: [Synth 8-6014] Unused sequential element cal1_state_r2_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2696]
-WARNING: [Synth 8-6014] Unused sequential element cal1_state_r3_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2697]
-WARNING: [Synth 8-6014] Unused sequential element cal1_cnt_cpt_timing_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:610]
-WARNING: [Synth 8-6014] Unused sequential element sample_cnt_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:156]
-WARNING: [Synth 8-6014] Unused sequential element reseed_prbs_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:157]
-WARNING: [Synth 8-6014] Unused sequential element lfsr_q_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:174]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.phy_tmp_cs1_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4271]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.phy_tmp_odt_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4273]
-WARNING: [Synth 8-6014] Unused sequential element wrlvl_final_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1421]
-WARNING: [Synth 8-6014] Unused sequential element wrlvl_rank_cntr_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1539]
-WARNING: [Synth 8-6014] Unused sequential element cnt_pwron_cke_done_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1781]
-WARNING: [Synth 8-6014] Unused sequential element cnt_txpr_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1799]
-WARNING: [Synth 8-6014] Unused sequential element cnt_txpr_done_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1800]
-WARNING: [Synth 8-6014] Unused sequential element rnk_ref_cnt_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1941]
-WARNING: [Synth 8-6014] Unused sequential element read_calib_int_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2720]
-WARNING: [Synth 8-6014] Unused sequential element read_calib_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2727]
-WARNING: [Synth 8-6014] Unused sequential element ddr3_lm_done_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2772]
-WARNING: [Synth 8-6014] Unused sequential element pi_dqs_found_rank_done_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2778]
-WARNING: [Synth 8-6014] Unused sequential element pi_dqs_found_all_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2783]
-WARNING: [Synth 8-6014] Unused sequential element complex_row0_rd_done_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3339]
-WARNING: [Synth 8-6014] Unused sequential element rdlvl_wr_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3632]
-WARNING: [Synth 8-6014] Unused sequential element extend_cal_pat_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3638]
-WARNING: [Synth 8-6014] Unused sequential element cnt_init_data_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3714]
-WARNING: [Synth 8-6014] Unused sequential element victim_byte_cnt_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:818]
-WARNING: [Synth 8-6014] Unused sequential element calib_cas_slot_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4173]
-WARNING: [Synth 8-3936] Found unconnected internal register 'rdlvl_start_dly0_r_reg' and it is trimmed from '16' to '15' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1228]
-WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '16' to '15' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1230]
-WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly_r_reg' and it is trimmed from '16' to '15' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1232]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr2_r_reg[1] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4265]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr2_r_reg[2] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4265]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr2_r_reg[3] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4265]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr1_r_reg[1] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4268]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr1_r_reg[2] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4268]
-WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr1_r_reg[3] was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4268]
-WARNING: [Synth 8-6014] Unused sequential element prech_done_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1303]
-WARNING: [Synth 8-6014] Unused sequential element calib_cmd_wren_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4229]
-WARNING: [Synth 8-3848] Net calib_aux_out in module/entity mig_7series_v4_2_ddr_phy_init does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:276]
-WARNING: [Synth 8-6014] Unused sequential element rd_active_r4_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:534]
-WARNING: [Synth 8-6014] Unused sequential element rd_active_r5_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:535]
-WARNING: [Synth 8-6014] Unused sequential element pat1_detect_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1124]
-WARNING: [Synth 8-6014] Unused sequential element early1_detect_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1125]
-WARNING: [Synth 8-6014] Unused sequential element rd_mux_sel_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:438]
-WARNING: [Synth 8-3848] Net i in module/entity mig_7series_v4_2_ddr_phy_wrcal does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:155]
-WARNING: [Synth 8-6014] Unused sequential element calib_complete_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:182]
-WARNING: [Synth 8-6014] Unused sequential element sample_en_cnt_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:188]
-WARNING: [Synth 8-6014] Unused sequential element device_temp_capture_102_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:290]
-WARNING: [Synth 8-6014] Unused sequential element gen_byte_sel_div2.ctl_lane_sel_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:963]
-WARNING: [Synth 8-6014] Unused sequential element tempmon_sel_pi_incdec_r_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:883]
-WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r1_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:898]
-WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r2_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:899]
-WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r3_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:900]
-WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r4_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:901]
-WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r5_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:902]
-WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r6_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:903]
-WARNING: [Synth 8-6014] Unused sequential element skip_calib_tap_off.skip_cal_tempmon_samp_en_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:2262]
-WARNING: [Synth 8-6014] Unused sequential element wrlvl_final_mux_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:834]
-WARNING: [Synth 8-3848] Net dbg_skip_cal in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:673]
-WARNING: [Synth 8-3848] Net coarse_dec_err in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:662]
-WARNING: [Synth 8-3848] Net dbg_poc in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:335]
-WARNING: [Synth 8-3848] Net fine_delay_incdec_pb in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:341]
-WARNING: [Synth 8-3848] Net fine_delay_sel in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:342]
-WARNING: [Synth 8-3848] Net lim_done in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:620]
-WARNING: [Synth 8-3848] Net lim2init_write_request in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:619]
-WARNING: [Synth 8-3848] Net complex_ocal_num_samples_done_r in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:533]
-WARNING: [Synth 8-3848] Net complex_ocal_rd_victim_sel in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:534]
-WARNING: [Synth 8-3848] Net done_dqs_tap_inc in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:587]
-WARNING: [Synth 8-3848] Net complex_victim_inc in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:592]
-WARNING: [Synth 8-3848] Net rd_victim_sel in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:588]
-WARNING: [Synth 8-3848] Net oclkdelay_center_calib_start in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:597]
-WARNING: [Synth 8-3848] Net oclk_center_write_resume in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:615]
-WARNING: [Synth 8-3848] Net oclkdelay_center_calib_done in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:616]
-WARNING: [Synth 8-6014] Unused sequential element app_wdf_rdy_r_copy4_reg was removed.  [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:268]
-WARNING: [Synth 8-3848] Net error in module/entity mig_7series_v4_2_memc_ui_top_std does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:417]
-WARNING: [Synth 8-3848] Net clk_ref_p in module/entity mig_7series_0_mig does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:592]
-WARNING: [Synth 8-3848] Net clk_ref_n in module/entity mig_7series_0_mig does not have driver. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:593]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[0].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[1].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[2].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[3].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[4].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[5].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[6].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element gen_track_left_edge[7].pb_found_first_edge_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2474]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:686]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r2_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:687]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_stg1_done_int_r3_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:688]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:689]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r2_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:690]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_last_byte_done_int_r3_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:691]
+WARNING: [Synth 8-6014] Unused sequential element fine_dly_dec_done_r3_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:940]
+WARNING: [Synth 8-6014] Unused sequential element fine_dly_dec_done_r4_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:941]
+WARNING: [Synth 8-6014] Unused sequential element regl_rank_done_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:1044]
+WARNING: [Synth 8-6014] Unused sequential element cal1_state_r2_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2696]
+WARNING: [Synth 8-6014] Unused sequential element cal1_state_r3_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:2697]
+WARNING: [Synth 8-6014] Unused sequential element cal1_cnt_cpt_timing_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v:610]
+WARNING: [Synth 8-6014] Unused sequential element sample_cnt_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:156]
+WARNING: [Synth 8-6014] Unused sequential element reseed_prbs_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:157]
+WARNING: [Synth 8-6014] Unused sequential element lfsr_q_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v:174]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.phy_tmp_cs1_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4271]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.phy_tmp_odt_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4273]
+WARNING: [Synth 8-6014] Unused sequential element wrlvl_final_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1421]
+WARNING: [Synth 8-6014] Unused sequential element wrlvl_rank_cntr_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1539]
+WARNING: [Synth 8-6014] Unused sequential element cnt_pwron_cke_done_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1781]
+WARNING: [Synth 8-6014] Unused sequential element cnt_txpr_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1799]
+WARNING: [Synth 8-6014] Unused sequential element cnt_txpr_done_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1800]
+WARNING: [Synth 8-6014] Unused sequential element rnk_ref_cnt_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1941]
+WARNING: [Synth 8-6014] Unused sequential element read_calib_int_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2720]
+WARNING: [Synth 8-6014] Unused sequential element read_calib_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2727]
+WARNING: [Synth 8-6014] Unused sequential element ddr3_lm_done_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2772]
+WARNING: [Synth 8-6014] Unused sequential element pi_dqs_found_rank_done_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2778]
+WARNING: [Synth 8-6014] Unused sequential element pi_dqs_found_all_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:2783]
+WARNING: [Synth 8-6014] Unused sequential element complex_row0_rd_done_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3339]
+WARNING: [Synth 8-6014] Unused sequential element rdlvl_wr_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3632]
+WARNING: [Synth 8-6014] Unused sequential element extend_cal_pat_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3638]
+WARNING: [Synth 8-6014] Unused sequential element cnt_init_data_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:3714]
+WARNING: [Synth 8-6014] Unused sequential element victim_byte_cnt_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:818]
+WARNING: [Synth 8-6014] Unused sequential element calib_cas_slot_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4173]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rdlvl_start_dly0_r_reg' and it is trimmed from '16' to '15' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1228]
+WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '16' to '15' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly_r_reg' and it is trimmed from '16' to '15' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1232]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr2_r_reg[1] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4265]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr2_r_reg[2] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4265]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr2_r_reg[3] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4265]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr1_r_reg[1] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4268]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr1_r_reg[2] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4268]
+WARNING: [Synth 8-6014] Unused sequential element gen_single_slot_odt.tmp_mr1_r_reg[3] was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4268]
+WARNING: [Synth 8-6014] Unused sequential element prech_done_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1303]
+WARNING: [Synth 8-6014] Unused sequential element calib_cmd_wren_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:4229]
+WARNING: [Synth 8-3848] Net calib_aux_out in module/entity mig_7series_v4_2_ddr_phy_init does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:276]
+WARNING: [Synth 8-6014] Unused sequential element rd_active_r4_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:534]
+WARNING: [Synth 8-6014] Unused sequential element rd_active_r5_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:535]
+WARNING: [Synth 8-6014] Unused sequential element pat1_detect_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1124]
+WARNING: [Synth 8-6014] Unused sequential element early1_detect_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:1125]
+WARNING: [Synth 8-6014] Unused sequential element rd_mux_sel_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:438]
+WARNING: [Synth 8-3848] Net i in module/entity mig_7series_v4_2_ddr_phy_wrcal does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v:155]
+WARNING: [Synth 8-6014] Unused sequential element calib_complete_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:182]
+WARNING: [Synth 8-6014] Unused sequential element sample_en_cnt_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:188]
+WARNING: [Synth 8-6014] Unused sequential element device_temp_capture_102_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v:290]
+WARNING: [Synth 8-6014] Unused sequential element gen_byte_sel_div2.ctl_lane_sel_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:963]
+WARNING: [Synth 8-6014] Unused sequential element tempmon_sel_pi_incdec_r_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:883]
+WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r1_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:898]
+WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r2_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:899]
+WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r3_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:900]
+WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r4_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:901]
+WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r5_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:902]
+WARNING: [Synth 8-6014] Unused sequential element ck_addr_cmd_delay_done_r6_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:903]
+WARNING: [Synth 8-6014] Unused sequential element skip_calib_tap_off.skip_cal_tempmon_samp_en_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:2262]
+WARNING: [Synth 8-6014] Unused sequential element wrlvl_final_mux_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:834]
+WARNING: [Synth 8-3848] Net dbg_skip_cal in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:673]
+WARNING: [Synth 8-3848] Net coarse_dec_err in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:662]
+WARNING: [Synth 8-3848] Net dbg_poc in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:335]
+WARNING: [Synth 8-3848] Net fine_delay_incdec_pb in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:341]
+WARNING: [Synth 8-3848] Net fine_delay_sel in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:342]
+WARNING: [Synth 8-3848] Net lim_done in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:620]
+WARNING: [Synth 8-3848] Net lim2init_write_request in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:619]
+WARNING: [Synth 8-3848] Net complex_ocal_num_samples_done_r in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:533]
+WARNING: [Synth 8-3848] Net complex_ocal_rd_victim_sel in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:534]
+WARNING: [Synth 8-3848] Net done_dqs_tap_inc in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:587]
+WARNING: [Synth 8-3848] Net complex_victim_inc in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:592]
+WARNING: [Synth 8-3848] Net rd_victim_sel in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:588]
+WARNING: [Synth 8-3848] Net oclkdelay_center_calib_start in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:597]
+WARNING: [Synth 8-3848] Net oclk_center_write_resume in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:615]
+WARNING: [Synth 8-3848] Net oclkdelay_center_calib_done in module/entity mig_7series_v4_2_ddr_calib_top does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v:616]
+WARNING: [Synth 8-6014] Unused sequential element app_wdf_rdy_r_copy4_reg was removed.  [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v:268]
+WARNING: [Synth 8-3848] Net error in module/entity mig_7series_v4_2_memc_ui_top_std does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_std.v:417]
+WARNING: [Synth 8-3848] Net clk_ref_p in module/entity mig_7series_0_mig does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:592]
+WARNING: [Synth 8-3848] Net clk_ref_n in module/entity mig_7series_0_mig does not have driver. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/mig_7series_0_mig.v:593]
 WARNING: [Synth 8-7129] Port rd_data_addr[4] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rd_data_addr[3] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rd_data_addr[2] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
@@ -693,61 +694,61 @@ WARNING: [Synth 8-7129] Port dbg_phy_init[220] in module mig_7series_v4_2_ddr_ph
 WARNING: [Synth 8-7129] Port dbg_phy_init[219] in module mig_7series_v4_2_ddr_phy_init is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1445.648 ; gain = 159.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1446.277 ; gain = 161.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1445.648 ; gain = 159.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1446.277 ; gain = 161.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1445.648 ; gain = 159.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1446.277 ; gain = 161.535
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.439 . Memory (MB): peak = 1445.648 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.858 . Memory (MB): peak = 1446.277 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
-Finished Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
-Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:334]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:341]
-Finished Parsing XDC File [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mig_7series_0_propImpl.xdc].
+Parsing XDC File [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
+Finished Parsing XDC File [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
+Parsing XDC File [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:334]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:341]
+Finished Parsing XDC File [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mig_7series_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/mig_7series_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1537.762 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1544.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 46 instances were transformed.
   IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
   IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 28 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1538.086 ; gain = 0.324
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.272 . Memory (MB): peak = 1544.391 ; gain = 0.141
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1538.086 ; gain = 251.598
+Finished Constraint Validation : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1544.391 ; gain = 259.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1538.086 ; gain = 251.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:05 ; elapsed = 00:01:13 . Memory (MB): peak = 1544.391 ; gain = 259.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc, line 27).
-Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc, line 28).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1538.086 ; gain = 251.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1544.391 ; gain = 259.648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'fine_adj_state_r_reg' in module 'mig_7series_v4_2_ddr_phy_dqs_found_cal_hr'
 INFO: [Synth 8-802] inferred FSM for state register 'cal1_state_r_reg' in module 'mig_7series_v4_2_ddr_phy_rdlvl'
@@ -820,7 +821,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'cal1_state_r_reg' using en
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3898] No Re-encoding of one hot register 'tempmon_state_reg' in module 'mig_7series_v4_2_ddr_phy_tempmon'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 1538.086 ; gain = 251.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:20 ; elapsed = 00:01:28 . Memory (MB): peak = 1544.391 ; gain = 259.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -961,12 +962,12 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'byte_sel_data_map_reg' and it is trimmed from '88' to '4' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:731]
-WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1232]
-WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1230]
+WARNING: [Synth 8-3936] Found unconnected internal register 'byte_sel_data_map_reg' and it is trimmed from '88' to '4' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v:731]
+WARNING: [Synth 8-3936] Found unconnected internal register 'oclkdelay_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1232]
+WARNING: [Synth 8-3936] Found unconnected internal register 'wrcal_start_dly_r_reg' and it is trimmed from '15' to '14' bits. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v:1230]
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_cal1_state_r_reg[33]) is unused and will be removed from module mig_7series_v4_2_ddr_phy_rdlvl.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:37 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:38 ; elapsed = 00:02:48 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1000,15 +1001,15 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 347 of d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc. [d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:347]
+WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 347 of d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc. [d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:347]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:30 ; elapsed = 00:01:41 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:45 ; elapsed = 00:02:55 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:42 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Timing Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:02:56 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1033,7 +1034,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:45 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Technology Mapping : Time (s): cpu = 00:02:52 ; elapsed = 00:03:02 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1051,37 +1052,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:01:49 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished IO Insertion : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:01:49 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:00 ; elapsed = 00:03:09 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:00 ; elapsed = 00:03:10 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1161,18 +1162,18 @@ Report Cell Usage:
 |41    |OBUFT                 |     2|
 +------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:00 ; elapsed = 00:03:10 . Memory (MB): peak = 1637.109 ; gain = 352.367
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:44 . Memory (MB): peak = 1658.410 ; gain = 279.484
-Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 1658.410 ; gain = 371.922
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:07 ; elapsed = 00:02:56 . Memory (MB): peak = 1637.109 ; gain = 254.254
+Synthesis Optimization Complete : Time (s): cpu = 00:03:00 ; elapsed = 00:03:10 . Memory (MB): peak = 1637.109 ; gain = 352.367
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 1658.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.363 . Memory (MB): peak = 1637.109 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 263 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 16 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1658.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1637.109 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 118 instances were transformed.
   IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
@@ -1185,8 +1186,8 @@ Synth Design complete, checksum: b59b5c91
 INFO: [Common 17-83] Releasing license: Synthesis
 211 Infos, 286 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:57 . Memory (MB): peak = 1658.410 ; gain = 371.922
+synth_design: Time (s): cpu = 00:03:11 ; elapsed = 00:03:23 . Memory (MB): peak = 1637.109 ; gain = 352.367
 INFO: [Coretcl 2-1174] Renamed 69 cell refs.
-INFO: [Common 17-1381] The checkpoint 'D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1/mig_7series_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/Repos/PigMipsSystem/PigMipsSystem.runs/mig_7series_0_synth_1/mig_7series_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mig_7series_0_utilization_synth.rpt -pb mig_7series_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jun  3 17:39:46 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  4 23:39:12 2023...

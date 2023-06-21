@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
--- Date        : Sat Jun  3 17:39:45 2023
+-- Date        : Sun Jun  4 23:39:10 2023
 -- Host        : LAPTOP-JNSJ8DCA running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               d:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0_stub.vhdl
+--               d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0_stub.vhdl
 -- Design      : mig_7series_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

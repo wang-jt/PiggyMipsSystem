@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (win64) Build 3526262 Mon Apr 18 15:48:16 MDT 2022
-| Date             : Sat Jun  3 21:35:57 2023
+| Date             : Mon Jun  5 00:21:38 2023
 | Host             : LAPTOP-JNSJ8DCA running 64-bit major release  (build 9200)
 | Command          : report_power -file openmips_min_sopc_power_routed.rpt -pb openmips_min_sopc_power_summary_routed.pb -rpx openmips_min_sopc_power_routed.rpx
 | Design           : openmips_min_sopc
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.143        |
+| Total On-Chip Power (W)  | 1.142        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.035        |
+| Dynamic (W)              | 1.034        |
 | Device Static (W)        | 0.108        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 79.8         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.040 |       24 |       --- |             --- |
-| Slice Logic              |     0.010 |    27234 |       --- |             --- |
-|   LUT as Logic           |     0.008 |    12210 |     63400 |           19.26 |
+| Slice Logic              |     0.010 |    27366 |       --- |             --- |
+|   LUT as Logic           |     0.008 |    12222 |     63400 |           19.28 |
 |   CARRY4                 |     0.001 |      406 |     15850 |            2.56 |
-|   Register               |    <0.001 |    10588 |    126800 |            8.35 |
+|   Register               |    <0.001 |    10716 |    126800 |            8.45 |
 |   LUT as Distributed RAM |    <0.001 |      434 |     19000 |            2.28 |
 |   BUFG                   |    <0.001 |       11 |        32 |           34.38 |
 |   LUT as Shift Register  |    <0.001 |       16 |     19000 |            0.08 |
 |   F7/F8 Muxes            |    <0.001 |      501 |     63400 |            0.79 |
 |   Others                 |     0.000 |      244 |       --- |             --- |
-| Signals                  |     0.014 |    21718 |       --- |             --- |
+| Signals                  |     0.014 |    21877 |       --- |             --- |
 | Block RAM                |     0.004 |        4 |       135 |            2.96 |
 | MMCM                     |     0.218 |        2 |         6 |           33.33 |
 | PLL                      |     0.110 |        1 |         6 |           16.67 |
@@ -70,7 +70,7 @@ Table of Contents
 | I/O                      |     0.536 |      107 |       210 |           50.95 |
 | PHASER                   |     0.102 |       14 |       --- |             --- |
 | Static Power             |     0.108 |          |           |                 |
-| Total                    |     1.143 |          |           |                 |
+| Total                    |     1.142 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -80,7 +80,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.119 |       0.101 |      0.018 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.118 |       0.100 |      0.018 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.295 |       0.276 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -170,9 +170,9 @@ Table of Contents
 +-----------------------+-----------+
 | Name                  | Power (W) |
 +-----------------------+-----------+
-| openmips_min_sopc     |     1.035 |
+| openmips_min_sopc     |     1.034 |
 |   DDR2                |     0.983 |
-|     Ram               |     0.875 |
+|     Ram               |     0.874 |
 |       Inst_DDR        |     0.874 |
 |     clk_1             |     0.107 |
 |       inst            |     0.107 |

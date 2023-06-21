@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/impl_1/openmips_min_sopc.tcl"
+  variable script "D:/Repos/PigMipsSystem/PigMipsSystem.runs/impl_1/openmips_min_sopc.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,27 +123,28 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.cache/wt [current_project]
-  set_property parent.project_path D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.xpr [current_project]
-  set_property ip_output_repo D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Repos/PigMipsSystem/PigMipsSystem.cache/wt [current_project]
+  set_property parent.project_path D:/Repos/PigMipsSystem/PigMipsSystem.xpr [current_project]
+  set_property ip_output_repo D:/Repos/PigMipsSystem/PigMipsSystem.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.runs/synth_1/openmips_min_sopc.dcp
-  read_ip -quiet D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
-  read_ip -quiet D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
-  read_ip -quiet D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/rom0/rom0.xci
-  read_ip -quiet D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci
+  add_files -quiet D:/Repos/PigMipsSystem/PigMipsSystem.runs/synth_1/openmips_min_sopc.dcp
+  read_ip -quiet D:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
+  read_ip -quiet D:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet D:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/rom0/rom0.xci
+  read_ip -quiet d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_ip -quiet d:/Repos/PigMipsSystem/PigMipsSystem.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/constrs_1/new/nexys4ddr.xdc
+  read_xdc D:/Repos/PigMipsSystem/PigMipsSystem.srcs/constrs_1/new/nexys4ddr.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -204,7 +204,7 @@ set rc [catch {
 OPTRACE "read constraints: place_design" START { }
 OPTRACE "read constraints: place_design" END { }
 OPTRACE "read incremental checkpoint" START { }
-  read_checkpoint -auto_incremental  -incremental D:/Download/CPUandSOC/PigMipsSystem/PigMipsSystem.srcs/utils_1/imports/impl_1/openmips_min_sopc_routed.dcp
+  read_checkpoint -auto_incremental  -incremental D:/Repos/PigMipsSystem/PigMipsSystem.srcs/utils_1/imports/impl_1/openmips_min_sopc_routed.dcp
   catch { report_incremental_reuse -file openmips_min_sopc_incremental_reuse_pre_placed.rpt }
 OPTRACE "read incremental checkpoint" END { }
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 
